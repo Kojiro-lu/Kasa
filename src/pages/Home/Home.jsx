@@ -1,6 +1,7 @@
 import "./Home.scss";
 import Banner from "../../components/Banner/Banner";
 import Card from "../../components/Cards/Cards";
+import logementsData from "../../data/Logements.json";
 
 function Home() {
   return (
@@ -9,7 +10,14 @@ function Home() {
         <Banner />
       </div>
       <div className="card-container">
-        <Card />
+        {logementsData.map((logement) => (
+          <Card
+            key={logement.id}
+            id={logement.id}
+            title={logement.title}
+            cover={logement.cover}
+          />
+        ))}
       </div>
     </div>
   );

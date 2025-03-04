@@ -1,17 +1,24 @@
 .home-container {
   max-width: 1240px;
-  max-height: 1095px;
   background-color: white;
   border-radius: 30px;
   padding: 50px;
+  gap: 45px;
+  display: flex;
+  flex-direction: column;
 }
 
 .banner-container {
   max-width: 1240px;
-  max-height: 223px;
 }
 
 .card-container {
   max-width: 1240px;
-  max-height: 829px;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-sizing: border-box;
 }
