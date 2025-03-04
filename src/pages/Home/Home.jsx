@@ -1,9 +1,16 @@
-import Banner from "../../componentes/Banner/Banner";
+import "./Home.scss";
+import Banner from "../../components/Banner/Banner";
+import Card from "../../components/Cards/Cards";
 
 function Home() {
   return (
     <div className="home-container">
-      <Banner />
+      <div className="banner-container">
+        <Banner />
+      </div>
+      <div className="card-container">
+        <Card />
+      </div>
     </div>
   );
 }
