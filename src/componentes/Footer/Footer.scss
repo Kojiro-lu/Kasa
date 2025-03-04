@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  height: 209px;
+  align-items: center;
+  justify-content: end;
+  background-color: black;
+  margin: 0px;
+  padding: 0px;
+  gap: 30px;
+
+  &__logo {
+    width: 122px;
+    height: 39px;
+  }
+  p {
+    color: white;
+  }
+}

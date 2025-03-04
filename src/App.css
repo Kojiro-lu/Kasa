@@ -4,3 +4,8 @@
   max-width: 1440px;
   max-height: 1517px;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+}
