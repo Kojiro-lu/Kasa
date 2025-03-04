@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+
+  &__logo {
+    width: 210.32px;
+    height: auto;
+  }
+
+  &__navbarre {
+    display: flex;
+    width: 150px;
+
+    &__ul {
+      list-style: none;
+      display: flex;
+      padding: 0px;
+      margin: 0px;
+      gap: 40px;
+
+      a {
+        color: black;
+      }
+    }
+  }
+}
