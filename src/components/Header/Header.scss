@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 50px;
+  padding: 30px;
   max-width: 1240px;
 
   &__logo {
@@ -23,6 +23,7 @@
 
       a {
         color: black;
+        text-decoration: none;
       }
     }
   }
