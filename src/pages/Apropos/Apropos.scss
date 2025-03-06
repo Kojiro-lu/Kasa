@@ -1,4 +1,18 @@
 .apropos-container {
   max-width: 1240px;
-  height: 559px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 38px;
+  padding: 0;
+}
+
+.apropos-content {
+  width: 1024px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0px 0px 38px 0px;
 }
