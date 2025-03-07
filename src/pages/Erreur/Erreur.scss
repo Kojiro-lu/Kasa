@@ -1,0 +1,28 @@
+.erreur-container {
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  margin: 0 auto 100px;
+  gap: 85px;
+
+  h1 {
+    color: #ff6060;
+    font-weight: 700;
+    font-size: 288px;
+    margin: 0;
+    padding: 0;
+  }
+  p {
+    color: #ff6060;
+    font-weight: 500;
+    font-size: 36px;
+    margin: 0;
+  }
+  &__link-home-return {
+    font-weight: 500;
+    font-size: 18px;
+    color: black;
+  }
+}

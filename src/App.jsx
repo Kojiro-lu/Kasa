@@ -4,6 +4,7 @@ import Home from "./pages/Home/Home";
 import Apropos from "./pages/Apropos/Apropos";
 import Footer from "./components/Footer/Footer";
 import "./App.css";
+import Erreur from "./pages/Erreur/erreur";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Apropos" element={<Apropos />} />
+        <Route path="*" element={<Erreur />} />
       </Routes>
       <Footer />
     </Router>
