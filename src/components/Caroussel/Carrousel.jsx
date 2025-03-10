@@ -5,6 +5,9 @@ import arrowRight from "../../assets/images/arrow-right.png";
 
 function Carrousel({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0);
+  if (!images || images.length === 0) {
+    return null;
+  }
 
   const handlePrevious = () => {
     setCurrentIndex((prevIndex) =>
