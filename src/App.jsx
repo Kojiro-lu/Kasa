@@ -5,6 +5,7 @@ import Apropos from "./pages/Apropos/Apropos";
 import Footer from "./components/Footer/Footer";
 import "./App.css";
 import Erreur from "./pages/Erreur/erreur";
+import FicheLogement from "./pages/Logements/FicheLogement";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/FicheLogement/:id" element={<FicheLogement />} />
         <Route path="/Apropos" element={<Apropos />} />
         <Route path="*" element={<Erreur />} />
       </Routes>
