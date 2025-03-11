@@ -1,5 +1,5 @@
 .titleandlogement {
-  max-width: 635px;
+  width: 100%;
   &__title {
     color: #ff6060;
     font-weight: 500;
@@ -10,6 +10,6 @@
   &__location {
     font-weight: 500;
     font-size: 18px;
-    margin: 0;
+    margin: 1% 0 0 0;
   }
 }
