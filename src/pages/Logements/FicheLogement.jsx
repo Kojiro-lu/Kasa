@@ -11,7 +11,7 @@ function FicheLogement() {
   return (
     <div className="Logement-Container">
       <Carrousel images={logement?.pictures} />
-      <div className="tilelogement-and-profil-container">
+      <div className="tile-and-profil-container">
         <DisplayTitleAndLocation
           title={logement.title}
           location={logement.location}
