@@ -1,12 +1,15 @@
-.title-logement {
-  color: #ff6060;
-  font-weight: 500;
-  font-size: 36px;
-  margin: 0;
-}
+.titleandlogement {
+  max-width: 635px;
+  &__title {
+    color: #ff6060;
+    font-weight: 500;
+    font-size: 36px;
+    margin: 0;
+  }
 
-.location-logement {
-  font-weight: 500;
-  font-size: 18px;
-  margin: 0;
+  &__location {
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0;
+  }
 }

@@ -1,0 +1,21 @@
+.profile {
+  max-width: 167px;
+  display: flex;
+  flex-direction: row;
+
+  &__picture {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+  }
+
+  &__name {
+    width: 93px;
+    height: 52px;
+    text-align: end;
+    font-weight: 500;
+    font-size: 18px;
+    color: #ff6060;
+    margin: 0;
+  }
+}

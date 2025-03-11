@@ -3,6 +3,7 @@ import "./FicheLogement.scss";
 import LogementsData from "../../data/Logements.json";
 import Carrousel from "../../components/Caroussel/Carrousel";
 import DisplayTitleAndLocation from "../../components/TitleAndLocation/TitleAndLocation";
+import Profile from "../../components/Profile/Profile";
 
 function FicheLogement() {
   const { id } = useParams(); // récupèration de l'ID dans l'url
@@ -16,6 +17,7 @@ function FicheLogement() {
           title={logement.title}
           location={logement.location}
         />
+        <Profile name={logement.host.name} picture={logement.host.picture} />
       </div>
     </div>
   );
