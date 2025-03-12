@@ -19,5 +19,6 @@ body {
   body {
     max-width: 768px;
     width: auto;
+    padding: 0;
   }
 }

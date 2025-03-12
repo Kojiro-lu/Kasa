@@ -8,11 +8,20 @@
   flex-direction: column;
   width: 100%;
   margin: 0 auto;
+  @media screen and (max-width: 768px) {
+    max-width: 768px;
+    width: auto;
+    padding: 30px 0 30px 0;
+    margin: 0 20px;
+  }
 }
 
 .banner-container {
   max-width: 1240px;
   border-radius: 30px;
+  @media screen and (max-width: 768px) {
+    width: auto;
+  }
 }
 
 .card-container {
@@ -24,4 +33,7 @@
   flex-wrap: wrap;
   justify-content: center;
   box-sizing: border-box;
+  @media screen and (max-width: 768px) {
+    width: auto;
+  }
 }
