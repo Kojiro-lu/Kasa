@@ -13,3 +13,11 @@ body {
   flex-direction: column;
   width: 100%;
 }
+
+/* Media Query */
+@media screen and (max-width: 768px) {
+  body {
+    max-width: 768px;
+    width: auto;
+  }
+}

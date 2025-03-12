@@ -12,21 +12,13 @@
     height: auto;
   }
 
-  &__navbarre {
-    display: flex;
-    width: 150px;
-
-    &__ul {
-      list-style: none;
-      display: flex;
-      padding: 0px;
-      margin: 0px;
-      gap: 40px;
-
-      a {
-        color: black;
-        text-decoration: none;
-      }
+  @media screen and (max-width: 768px) {
+    max-width: 768px;
+    width: auto;
+    padding: 30px 0 30px 0;
+    &__logo {
+      width: 145px;
+      height: auto;
     }
   }
 }

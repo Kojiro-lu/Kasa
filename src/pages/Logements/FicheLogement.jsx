@@ -30,7 +30,16 @@ function FicheLogement() {
       </div>
       <div className="logement-collapse-container">
         <Collapse title="Description" content={logement.description} />
-        <Collapse title="Equipements" content={logement.equipments} />
+        <Collapse
+          title="Equipements"
+          content={
+            <ul className="equipements-liste">
+              {logement.equipments.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          }
+        />
       </div>
     </div>
   );
