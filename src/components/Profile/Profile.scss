@@ -5,11 +5,18 @@
   gap: 2%;
   align-items: center;
   justify-content: end;
+  @media screen and (max-width: 768px) {
+    width: 50%;
+  }
 
   &__picture {
     max-width: 64px;
     height: 64px;
     border-radius: 50%;
+    @media screen and (max-width: 768px) {
+      max-width: 32px;
+      height: 32px;
+    }
   }
 
   &__name {
@@ -20,5 +27,13 @@
     font-size: 18px;
     color: #ff6060;
     margin: 0;
+    line-height: 143%;
+    @media screen and (max-width: 768px) {
+      display: flex;
+      font-size: 12px;
+      align-items: center;
+      max-width: 63px;
+      text-align: center;
+    }
   }
 }

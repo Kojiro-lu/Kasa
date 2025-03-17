@@ -4,7 +4,7 @@ import Home from "./pages/Home/Home";
 import Apropos from "./pages/Apropos/Apropos";
 import Footer from "./components/Footer/Footer";
 import "./App.css";
-import Erreur from "./pages/Erreur/erreur";
+import Erreur from "./pages/Erreur/Erreur";
 import FicheLogement from "./pages/Logements/FicheLogement";
 
 function App() {

@@ -1,4 +1,5 @@
-import { useParams } from "react-router";
+import { useParams, useNavigate } from "react-router";
+import { useEffect } from "react";
 import "./FicheLogement.scss";
 import LogementsData from "../../data/Logements.json";
 import Carrousel from "../../components/Caroussel/Carrousel";
@@ -9,8 +10,17 @@ import Rating from "../../components/Rating/Rating";
 import Collapse from "../../components/Collapse/Collapse";
 
 function FicheLogement() {
-  const { id } = useParams(); // récupèration de l'ID dans l'url
-  const logement = LogementsData.find((logement) => logement.id === id); // on recherche le logement qui correspond
+  const { id } = useParams(); // Récupération de l'ID dans l'URL
+  const navigate = useNavigate(); // Hook pour la navigation
+  const logement = LogementsData.find((logement) => logement.id === id); // Recherche du logement correspondant
+
+  useEffect(() => {
+    if (!logement) {
+      navigate("/error", { replace: true }); // Redirection vers la page erreur si logement non trouvé
+    }
+  }, [logement, navigate]);
+
+  if (!logement) return null; // Empêche l'affichage du reste du composant si la redirection ne s'est pas encore effectuée
 
   return (
     <div className="logement-container">
@@ -23,7 +33,7 @@ function FicheLogement() {
           />
           <Tags tags={logement.tags} />
         </div>
-        <div className="profile-and-rate-container">
+        <div className="profile-and-rating-container">
           <Profile name={logement.host.name} picture={logement.host.picture} />
           <Rating rating={logement.rating} />
         </div>

@@ -7,6 +7,12 @@
   padding: 30px;
   margin: 0 auto;
   width: 100%;
+  @media screen and (max-width: 768px) {
+    max-width: 768px;
+    width: auto;
+    padding: 0;
+    margin: 0 20px;
+  }
 }
 
 .apropos-content {
@@ -17,4 +23,8 @@
   list-style-type: none;
   padding: 0;
   margin: 0px 0px 38px 0px;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    gap: 20px;
+  }
 }

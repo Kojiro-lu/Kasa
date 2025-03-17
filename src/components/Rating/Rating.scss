@@ -5,4 +5,16 @@
   width: 100%;
   justify-content: end;
   margin: 3% 0 0 0;
+  @media screen and (max-width: 768px) {
+    width: 50%;
+    justify-content: flex-start;
+    margin: 0;
+    align-items: center;
+  }
+}
+.rating-container img {
+  @media screen and (max-width: 768px) {
+    width: 13px;
+    height: 13px;
+  }
 }

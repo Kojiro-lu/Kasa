@@ -21,6 +21,8 @@ function Carrousel({ images }) {
     );
   };
 
+  const shouldShowUI = images.length > 1;
+
   return (
     <div className="carrousel">
       <img
@@ -28,7 +30,7 @@ function Carrousel({ images }) {
         alt={`Slide ${currentIndex + 1}`}
         className="carrousel__image"
       />
-      {images.length > 1 && (
+      {shouldShowUI && (
         <>
           <button className="carrousel__arrow carrousel__arrow--left">
             <img src={arrowLeft} alt="Previous" onClick={handlePrevious} />

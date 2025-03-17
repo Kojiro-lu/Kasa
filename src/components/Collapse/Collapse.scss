@@ -12,11 +12,17 @@
   border-radius: 5px;
   cursor: pointer;
   height: 52px;
+  @media screen and (max-width: 768px) {
+    height: 30px;
+  }
 }
 
 .collapse-title {
   font-size: 24px;
   font-weight: 700;
+  @media screen and (max-width: 768px) {
+    font-size: 13px;
+  }
 }
 
 .arrow {
@@ -35,4 +41,7 @@
   color: black;
   font-size: 18px;
   padding: 20px;
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+  }
 }
