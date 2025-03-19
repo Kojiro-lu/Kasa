@@ -8,7 +8,15 @@ function Home() {
   return (
     <div className="home-container">
       <div className="banner-container">
-        <Banner image={BannerHome} text="Chez vous, partout et ailleurs" />
+        <Banner
+          image={BannerHome}
+          text={
+            <>
+              Chez vous,
+              <br /> partout et ailleurs
+            </>
+          }
+        />
       </div>
       <div className="card-container">
         {logementsData.map((logement) => (

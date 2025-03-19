@@ -20,7 +20,7 @@ function FicheLogement() {
     }
   }, [logement, navigate]);
 
-  if (!logement) return null; // Empêche l'affichage du reste du composant si la redirection ne s'est pas encore effectuée
+  if (!logement) return null;
 
   return (
     <div className="logement-container">

@@ -3,7 +3,7 @@ import "./Banner.scss";
 function Banner({ image, text }) {
   return (
     <div className="banner" style={{ backgroundImage: `url(${image})` }}>
-      {text && <p>{text}</p>}
+      {text && <p className="banner-text">{text}</p>}
     </div>
   );
 }

@@ -6,6 +6,12 @@
   padding: 30px;
   margin: 0 auto 100px;
   gap: 85px;
+  @media screen and (max-width: 768px) {
+    width: auto;
+    padding: 62px 0;
+    margin: 0 20px;
+    max-width: 768px;
+  }
 
   h1 {
     color: #ff6060;
@@ -13,34 +19,30 @@
     font-size: 288px;
     margin: 0;
     padding: 0;
+    @media screen and (max-width: 768px) {
+      font-size: 96px;
+    }
   }
   p {
     color: #ff6060;
     font-weight: 500;
     font-size: 36px;
     margin: 0;
+    @media screen and (max-width: 768px) {
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    span {
+      display: block;
+    }
   }
   &__link-home-return {
     font-weight: 500;
     font-size: 18px;
     color: black;
-  }
-  @media screen and (max-width: 768px) {
-    width: auto;
-    padding: 62px 0;
-    margin: 0 20px;
-    max-width: 768px;
-    h1 {
-      font-size: 96px;
-    }
-    p {
-      font-size: 18px;
-      text-align: center;
-      span {
-        display: block;
-      }
-    }
-    &__link-home-return {
+    @media screen and (max-width: 768px) {
       font-size: 14px;
     }
   }

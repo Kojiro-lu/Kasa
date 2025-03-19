@@ -2,23 +2,23 @@
   display: flex;
   width: 309px;
   gap: 35%;
+  @media screen and (max-width: 768px) {
+    width: 190px;
+    gap: 10%;
+    justify-content: end;
+  }
 
   a {
     text-decoration: none;
     color: black;
     font-weight: 500;
     font-size: 24px;
+    @media screen and (max-width: 768px) {
+      font-size: 12px;
+    }
   }
 
   a.active {
     text-decoration: underline;
-  }
-  @media screen and (max-width: 768px) {
-    width: 190px;
-    gap: 10%;
-    justify-content: end;
-    a {
-      font-size: 12px;
-    }
   }
 }
